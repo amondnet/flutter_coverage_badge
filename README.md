@@ -2,7 +2,7 @@
 
 Flutter Coverage Badge
 
-![Coverage](https://raw.githubusercontent.com/{you}/{repo}/master/coverage_badge.svg?sanitize=true)
+![Coverage](https://raw.githubusercontent.com/amondnet/flutter_coverage_badge/master/coverage_badge.svg?sanitize=true)
 
 
 ## Getting Started
@@ -15,7 +15,7 @@ flutter test --coverage
 
 ### Generate badge image
 
-![Coverage](https://raw.githubusercontent.com/{you}/{repo}/master/coverage_badge.svg?sanitize=true)
+![Coverage](https://raw.githubusercontent.com/amondnet/flutter_coverage_badge/master/coverage_badge.svg?sanitize=true)
 
 ```
 pub run flutter_coverage_badge
