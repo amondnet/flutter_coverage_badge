@@ -1,8 +1,8 @@
 name: flutter_coverage_badge
-description: Flutter Badge
-version: 0.0.1
-author:
-homepage:
+description: Flutter Coverage Badge
+version: 0.0.1+1
+author: Minsu Lee <amond@amond.net>
+homepage: https://github.com/amondnet/flutter_coverage_badge
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
