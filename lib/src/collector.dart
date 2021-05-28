@@ -18,7 +18,7 @@ double calculateLineCoverage(File lcovReport) {
   var totalLines = 0;
   var hitLines = 0;
   for (final rec in report.records) {
-    for (final line in rec.lines.data) {
+    for (final line in rec!.lines!.data) {
       totalLines++;
       hitLines += (line.executionCount > 0) ? 1 : 0;
     }
@@ -31,7 +31,7 @@ void generateBadge(Directory packageRoot, double lineCoverage) {
   final value = '${(lineCoverage * 100).floor()}%';
   final color = _color(lineCoverage);
   final metrics = _BadgeMetrics.forPercentage(lineCoverage);
-  final rightWidth = metrics.width - leftWidth;
+  final rightWidth = metrics.width! - leftWidth;
   final content = _kBadgeTemplate
       .replaceAll('{width}', metrics.width.toString())
       .replaceAll('{rightWidth}', rightWidth.toString())
@@ -44,9 +44,9 @@ void generateBadge(Directory packageRoot, double lineCoverage) {
 }
 
 class _BadgeMetrics {
-  final int width;
-  final int rightX;
-  final int rightLength;
+  final int? width;
+  final int? rightX;
+  final int? rightLength;
 
   _BadgeMetrics({this.width, this.rightX, this.rightLength});
 
@@ -82,8 +82,8 @@ String _color(double percentage) {
     0.9: _Color(0x97, 0xCA, 0x00),
     1.0: _Color(0x44, 0xCC, 0x11),
   };
-  double lower;
-  double upper;
+  double? lower;
+  double? upper;
   for (final key in map.keys) {
     if (percentage < key) {
       upper = key;
@@ -92,8 +92,8 @@ String _color(double percentage) {
     if (key < 1.0) lower = key;
   }
   upper ??= 1.0;
-  final lowerColor = map[lower];
-  final upperColor = map[upper];
+  final lowerColor = map[lower!]!;
+  final upperColor = map[upper]!;
   final range = upper - lower;
   final rangePct = (percentage - lower) / range;
   final pctLower = 1 - rangePct;
