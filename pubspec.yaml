@@ -19,7 +19,8 @@ dependencies:
   args: ^2.1.0
   lcov:
     git:
-      url: git@github.com:amondnet/lcov.dart.git
+      url: https://github.com/csells/lcov.dart.git
+      ref: 4319102fa64eeba72fe8dfab024762e6253e3c93
 
 
 dev_dependencies:
