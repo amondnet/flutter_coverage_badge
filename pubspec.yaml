@@ -1,8 +1,8 @@
 name: flutter_coverage_badge
 description: Flutter Coverage Badge
 version: 0.0.1+1
-author: Minsu Lee <amond@amond.net>
 homepage: https://github.com/amondnet/flutter_coverage_badge
+publish_to: none
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -19,7 +19,8 @@ dependencies:
   args: ^2.1.0
   lcov:
     git:
-      url: git@github.com:amondnet/lcov.dart.git
+      url: https://github.com/csells/lcov.dart.git
+      ref: 4319102fa64eeba72fe8dfab024762e6253e3c93
 
 
 dev_dependencies:
