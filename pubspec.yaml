@@ -1,7 +1,6 @@
 name: flutter_coverage_badge
 description: Flutter Coverage Badge
 version: 0.0.1+1
-author: Minsu Lee <amond@amond.net>
 homepage: https://github.com/amondnet/flutter_coverage_badge
 publish_to: none
 

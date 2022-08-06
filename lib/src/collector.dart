@@ -1,11 +1,9 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:lcov/lcov.dart';
 import 'package:path/path.dart' as path;
 
 Future runTestsWithCoverage(String packageRoot) async {
-  final script = path.join(packageRoot);
   final flutterArgs = ['test', '--coverage', ''];
 
   final process = await Process.start('flutter', flutterArgs,
