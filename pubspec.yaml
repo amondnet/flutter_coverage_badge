@@ -19,8 +19,8 @@ dependencies:
   args: ^2.1.0
   lcov:
     git:
-      url: https://github.com/csells/lcov.dart.git
-      ref: 4319102
+      url: git@github.com:amondnet/lcov.dart.git
+
 
 dev_dependencies:
   flutter_test:
